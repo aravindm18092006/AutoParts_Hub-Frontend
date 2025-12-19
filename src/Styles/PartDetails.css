@@ -1,0 +1,252 @@
+.part-details-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.back-btn {
+  padding: 10px 20px;
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+  background: #e9ecef;
+}
+
+.part-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.part-image-section {
+  text-align: center;
+}
+
+.main-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.part-info-section h1 {
+  color: #191414;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.part-number {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.category {
+  color: #1DB954;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1DB954;
+  margin-bottom: 20px;
+}
+
+.stock-info {
+  margin-bottom: 25px;
+}
+
+.stock-status {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.in-stock {
+  background: #d4edda;
+  color: #155724;
+}
+
+.out-stock {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.description,
+.specifications {
+  margin-bottom: 25px;
+}
+
+.description h3,
+.specifications h3,
+.features h3 {
+  color: #191414;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.description p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.specifications ul {
+  list-style: none;
+  padding: 0;
+}
+
+.specifications li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  color: #666;
+}
+
+.purchase-section {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 16px;
+  margin-bottom: 25px;
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.quantity-selector label {
+  font-weight: 600;
+  color: #191414;
+}
+
+.quantity-selector input {
+  width: 80px;
+  padding: 8px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.total-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1DB954;
+  margin-bottom: 20px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.add-to-cart-btn,
+.buy-now-btn {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.add-to-cart-btn {
+  background: white;
+  color: #1DB954;
+  border: 2px solid #1DB954;
+}
+
+.buy-now-btn {
+  background: #1DB954;
+  color: white;
+}
+
+.add-to-cart-btn:hover {
+  background: #1DB954;
+  color: white;
+}
+
+.buy-now-btn:hover {
+  background: #1ed760;
+}
+
+.add-to-cart-btn:disabled,
+.buy-now-btn:disabled {
+  background: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  border-color: #ccc;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.feature span {
+  font-size: 20px;
+}
+
+.feature p {
+  margin: 0;
+  color: #666;
+  font-weight: 600;
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 18px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .part-details {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  
+  .part-info-section h1 {
+    font-size: 24px;
+  }
+  
+  .price {
+    font-size: 28px;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}

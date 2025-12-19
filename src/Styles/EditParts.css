@@ -1,0 +1,64 @@
+.edit-container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  margin-top: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.edit-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-form label {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.edit-form input,
+.edit-form select,
+.edit-form textarea {
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  font-size: 14px;
+}
+
+.edit-form input:focus,
+.edit-form select:focus,
+.edit-form textarea:focus {
+  border-color: orange;
+  outline: none;
+}
+
+.edit-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.edit-form button:hover {
+  background-color: #cc7a00;
+}
+
+.edit-message {
+  margin-top: 10px;
+  color: green;
+  text-align: center;
+  font-weight: bold;
+}

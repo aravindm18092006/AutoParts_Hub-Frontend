@@ -1,0 +1,63 @@
+{
+  "parts": [
+    {
+      "id": 1,
+      "name": "Engine",
+      "brand": "Honda",
+      "price": 25000,
+      "description": "Good condition engine suitable for Honda vehicles.",
+      "image": "/Images/engine.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Battery",
+      "brand": "Amaron",
+      "price": 3500,
+      "description": "6 months used Amaron car battery.",
+      "image": "/Images/battery.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Tyre",
+      "brand": "MRF",
+      "price": 2000,
+      "description": "Front tyre with 80% tread life remaining.",
+      "image": "/Images/tyre.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Air Filter",
+      "brand": "Bosch",
+      "price": 600,
+      "description": "Clean and efficient air filter suitable for multiple car models.",
+      "image": "/Images/airfilter.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Spark Plug",
+      "brand": "NGK",
+      "price": 250,
+      "description": "High performance spark plug for improved ignition.",
+      "image": "/Images/sparkplug.jpg"
+    }
+  ],
+
+  "users": [
+    {
+      "id": 1,
+      "name": "Aravind",
+      "password": "12345",
+      "phone": "9876543210",
+      "address": "Chennai, Tamil Nadu",
+      "profilePic": "/Images/user1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Karthik",
+      "password": "karthik123",
+      "phone": "9123456789",
+      "address": "Coimbatore, Tamil Nadu",
+      "profilePic": "/Images/user2.jpg"
+    }
+  ]
+}
