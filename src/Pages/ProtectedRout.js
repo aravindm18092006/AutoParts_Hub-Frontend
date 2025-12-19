@@ -1,11 +1,11 @@
 import { Navigate } from "react-router-dom";
 
 const ProtectedRout = ({ children }) => {
-  const auth = localStorage.getItem("auth");
-  if (auth === "true") {
+  const token = localStorage.getItem("token");
+  if (token) {
     return children;
   }
-  return <Navigate to="/login" />;
+  return <Navigate to="/" />;
 };
 
 export default ProtectedRout;

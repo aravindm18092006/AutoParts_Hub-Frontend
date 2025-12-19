@@ -8,19 +8,33 @@ const Header = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   useEffect(() => {
-    const auth = localStorage.getItem("auth");
-    const userData = localStorage.getItem("user");
+    const checkAuth = () => {
+      const token = localStorage.getItem("token");
+      const userData = localStorage.getItem("user");
+      
+      if (token && userData) {
+        setIsAuthenticated(true);
+        setUser(JSON.parse(userData));
+      } else {
+        setIsAuthenticated(false);
+        setUser(null);
+      }
+    };
+
+    checkAuth();
     
-    if (auth === "true" && userData) {
-      setIsAuthenticated(true);
-      setUser(JSON.parse(userData));
-    }
+    // Listen for storage changes to update auth state
+    window.addEventListener('storage', checkAuth);
+    
+    return () => {
+      window.removeEventListener('storage', checkAuth);
+    };
   }, []);
 
   const handleLogout = () => {
-    localStorage.removeItem("auth");
     localStorage.removeItem("token");
     localStorage.removeItem("user");
+    localStorage.removeItem("auth");
     setIsAuthenticated(false);
     setUser(null);
     navigate("/");

@@ -30,16 +30,28 @@ const routerVariables = createBrowserRouter([
         element: <Login/>,
       },
       {
-        path: "/home",
-        element: <Home />,
+        path: "/login",
+        element: <Login/>,
       },
       {
         path: "/register",
         element: <Register />,
       },
       {
+        path: "/home",
+        element: (
+          <ProtectedRout>
+            <Home />
+          </ProtectedRout>
+        ),
+      },
+      {
         path: "/viewparts",
-        element: <ViewParts />,
+        element: (
+          <ProtectedRout>
+            <ViewParts />
+          </ProtectedRout>
+        ),
       },
       {
         path: "/addparts",
@@ -51,11 +63,19 @@ const routerVariables = createBrowserRouter([
       },
       {
         path: "/editparts",
-        element: <EditParts />,
+        element: (
+          <ProtectedRout>
+            <EditParts />
+          </ProtectedRout>
+        ),
       },
       {
         path: "/deleteparts",
-        element: <DeleteParts />,
+        element: (
+          <ProtectedRout>
+            <DeleteParts />
+          </ProtectedRout>
+        ),
       },
       {
         path: "/profile",
@@ -67,23 +87,43 @@ const routerVariables = createBrowserRouter([
       },
       {
         path: "/autoparts/:resId",
-        element: <AutoParts />,
+        element: (
+          <ProtectedRout>
+            <AutoParts />
+          </ProtectedRout>
+        ),
       },
       {
         path: "/shop",
-        element: <ShopParts />,
+        element: (
+          <ProtectedRout>
+            <ShopParts />
+          </ProtectedRout>
+        ),
       },
       {
         path: "/part/:id",
-        element: <PartDetails />,
+        element: (
+          <ProtectedRout>
+            <PartDetails />
+          </ProtectedRout>
+        ),
       },
       {
         path: "/about",
-        element: <About />,
+        element: (
+          <ProtectedRout>
+            <About />
+          </ProtectedRout>
+        ),
       },
       {
         path: "/contact",
-        element: <Contact />,
+        element: (
+          <ProtectedRout>
+            <Contact />
+          </ProtectedRout>
+        ),
       },
       {
         path: "*",
